@@ -1,0 +1,58 @@
+#main-box {
+  margin: auto;
+  width: 100%;
+  background-color: #EEE;
+  padding-top: 7%;
+}
+
+#profile-pic {
+  width: 30%;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  box-shadow: 1px 1px 2px #444;
+  border: 1px solid #666;
+}
+
+#title {
+  margin: 1em auto;
+  font-size: 8vw;
+  display: block;
+  text-align: center;
+  color: #333;
+}
+
+#summary {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  font-size: 3vw;
+  color: #555;
+}
+
+#projects-div {
+  width: 90%;
+  margin: 3em auto;
+}
+
+.project {
+  margin: auto 1em;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.thumb {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.caption {
+  height: 0;
+  background: rgba(0, 0, 0, 0);
+  position: relative;
+  top: -1em;
+  left: 1em;
+  color: rgb(209, 209, 209);
+  text-shadow: 1px 1px 2px #FFF;
+  font-size: 4vw;
+}

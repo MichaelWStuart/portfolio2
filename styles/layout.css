@@ -1,0 +1,35 @@
+@media screen and (min-width: 800px) {
+  #main-box {
+    width: 60%;
+    padding-top: 100px;
+  }
+
+  #profile-pic {
+    width: 200px;
+  }
+
+  #title {
+    font-size: 45px;
+  }
+
+  #summary {
+    font-size: 20px;
+  }
+
+  #projects-div {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: 250px;
+  }
+
+  .project {
+    flex: 0 0 auto;
+  }
+
+  .thumb {
+    height: 250px;
+    width: 300px;
+    object-fit: none;
+  }
+}
