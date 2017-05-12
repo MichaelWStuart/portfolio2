@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('http://topteplo.com/wp-content/uploads/2016/02/cover-image-00011-min-1.jpg');
+  background-size: cover;
+  font-family: 'Roboto';
+}
