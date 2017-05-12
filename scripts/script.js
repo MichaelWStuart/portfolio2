@@ -18,6 +18,4 @@ $(() => {
 
   projects.forEach(project => $('#projects-div').append(project.toHtml()));
 
-  console.log($('#projects-div'))
-
 });
