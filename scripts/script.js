@@ -9,15 +9,9 @@ $(() => {
   }
 
   Project.prototype.toHtml = function () {
-    const template = $('#project-template').html();
-    const templateRender = Handlebars.compile(template);
-    return templateRender(this);
+    return (Handlebars.compile($('#project-template').html()))(this);
   }
 
-  const projects = projectData.reduce((acc, project) => acc.concat(new Project(project)), []);
-
-  projects.forEach(project => $('#projects-div').append(project.toHtml()));
-
-  console.log($('#projects-div'))
+  projectData.forEach(project => $('#projects-div').append((new Project(project)).toHtml()));
 
 });

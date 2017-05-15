@@ -1,15 +1,15 @@
 @media screen and (min-width: 800px) {
   #main-box {
     width: 60%;
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
   #profile-pic {
-    width: 200px;
+    width: 300px;
   }
 
   #title {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   #summary {
@@ -21,6 +21,7 @@
     flex-wrap: nowrap;
     overflow-x: auto;
     height: 250px;
+    margin: 30px auto 0 auto;
   }
 
   .project {
@@ -31,5 +32,9 @@
     height: 250px;
     width: 300px;
     object-fit: none;
+  }
+
+  .caption {
+    font-size: 20px;
   }
 }
