@@ -18,23 +18,26 @@
 
   #projects-div {
     display: flex;
-    flex-wrap: nowrap;
     overflow-x: auto;
-    height: 250px;
+    height: 275px;
     margin: 30px auto 0 auto;
   }
 
   .project {
+    margin: 0 10px;
     flex: 0 0 auto;
+    width: 300px;
+    height: 250px;
+    border-radius: 3px;
   }
 
   .thumb {
-    height: 250px;
-    width: 300px;
-    object-fit: none;
+    object-fit: scale-down;
   }
 
   .caption {
+
     font-size: 20px;
+    margin: 0;
   }
 }
