@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script type='text/javascript' src='scripts/script.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link type='text/css' rel='stylesheet' href='styles/base.css'>
+    <link type='text/css' rel='stylesheet' href='styles/modules.css'>
+    <link type='text/css' rel='stylesheet' href='styles/layout.css'>
+
+    <script id="project-template" type="text/x-handlebars-template">
+      <div class='project'>
+        <a href='{{href}}'>
+          <img class='thumb' src='thumbnails/{{thumb}}.png' />
+        </a>
+        <h2 class='caption'>{{title}}</h2>
+      </div>
+    </script>
+
+  </head>
+  <body>
+    <div id='tooltip'></div>
+    <div id='main-box'>
+      <img id='profile-pic' src='https://avatars3.githubusercontent.com/u/18186778?v=3&s=460'>
+      <h1 id='title'>Michael Stuart</h1>
+      <p id='summary'>Brooklyn raclette pop-up meggings, venmo photo booth post-ironic health goth drinking vinegar whatever ugh disrupt retro. Messenger bag dreamcatcher direct trade chartreuse.</p>
+      <div id='projects-div'></div>
+      <div id='links'></div>
+    </div>
+  </body>
+</html>
