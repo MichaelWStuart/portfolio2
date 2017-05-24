@@ -65,3 +65,13 @@
   position: absolute;
   text-align: center;
 }
+
+#links {
+  margin: 2em auto 0 auto;
+  text-align: center;
+
+}
+
+#github-icon {
+  cursor: pointer;
+}
