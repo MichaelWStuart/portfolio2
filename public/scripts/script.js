@@ -31,4 +31,6 @@ $(() => {
 
   $('.thumb').on('mouseout', () => $('#tooltip').fadeOut(300).css('opacity', .0));
 
+  $.get(`/github/user/repos`).then(data => data.forEach(item => console.log(item)))
+
 });
