@@ -31,6 +31,9 @@ $(() => {
 
   $('.thumb').on('mouseout', () => $('#tooltip').fadeOut(300).css('opacity', .0));
 
-  $.get(`/github/user/repos`).then(data => data.forEach(item => console.log(item)))
-
+  $('#github-icon').on('click', () =>
+    $.get(`/github/user/repos`).then(data =>
+      data.forEach(item =>
+        $('#repo-container').append(`<li><a href="${item.html_url}">${item.name}</a></li>`)
+      )));
 });
