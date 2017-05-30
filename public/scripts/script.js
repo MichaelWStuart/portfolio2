@@ -31,6 +31,10 @@ $(() => {
 
   $('.thumb').on('mouseout', () => $('#tooltip').fadeOut(300).css('opacity', .0));
 
-  $.get(`/github/user/repos`).then(data => data.forEach(item => console.log(item)))
+  $.get(`/github/user/repos`).then(data => {
+    const recentCount = data.reduce((acc, val) =>
+      Number(val.updated_at.slice(0, 4)) === (new Date).getFullYear() ? (acc += 1) && acc: acc, 0);
+    $('#project-count').text(`${recentCount} projects completed so far in ${(new Date).getFullYear()}`);
+  });
 
 });
